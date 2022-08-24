@@ -29,7 +29,11 @@
 
 ####		2020.2版本project总结:
 + linux中可以无视驱动成功使用dfu写入secondary pdi；
-+ win10中如果电脑中有DFU 2.0 emulation v 1.1和Xilinx DFU Downloader任何一个驱动，plm启动后会直接挂掉，显示Image Header Table Validation failed；
++ win10中如果电脑中有DFU 2.0 emulation v 1.1和Xilinx DFU Downloader任何一个驱动，plm启动后会直接挂掉，显示
+```
+[1661.412843]Image Header Table Validation failed
+[1667.524953]PLM Error Status 0x03020001
+```
 + win10中如果没有预先装任何驱动，可以发现设备管理器和zadig都将设备识别为DFU 2.0 emulation v 1.1，此时，plm正常停在
 ```
 [968.692618]Loading PDI from USB 
